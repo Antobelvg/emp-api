@@ -86,9 +86,9 @@ let VPList = {
 		 });
 	 }
 	 ,
-	 postTiempoFinal: function(id, tiempoFinal){
+	 postTema: function(id, tema){
 		console.log(id);
-		 return Vicepresidencia.findOneAndUpdate({nombre: id}, {tiempoFinal: tiempoFinal}, (err, doc) =>{
+		 return Vicepresidencia.findOneAndUpdate({nombre: id}, {tema: tema}, (err, doc) =>{
 			 if(err){
 				 throw Error(error);
 			 }
