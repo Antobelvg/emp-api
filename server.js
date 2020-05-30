@@ -76,7 +76,7 @@ app.get( "/api/usuario", ( req, res, next ) => {
 		});
 });
 
-app.post("/api/EjercicioAn2", jsonParser, (req, res, next) =>{
+app.post("/api/usuarioAn2", jsonParser, (req, res, next) =>{
 	let tiempoFinal = req.body.tiempoFinal;
 	let id = req.body.id;
 
@@ -97,7 +97,7 @@ app.post("/api/EjercicioAn2", jsonParser, (req, res, next) =>{
 	});
 });
 
-app.post("/api/EjercicioAn3", jsonParser, (req, res, next) =>{
+app.post("/api/usuarioAn3", jsonParser, (req, res, next) =>{
 	let nivel = req.body.nivel; //Body en el apiutil de alexa
 	let id = req.body.id;
 	// let id = req.body.id;
@@ -119,7 +119,7 @@ app.post("/api/EjercicioAn3", jsonParser, (req, res, next) =>{
 		});
 })
 
-app.post("/api/EjercicioAn4", jsonParser, (req, res, next) =>{
+app.post("/api/usuarioAn4", jsonParser, (req, res, next) =>{
 	let tiempoAcum = req.body.tiempoAcumulado; //Body en el apiutil de alexa
 	let id = req.body.id;
 	// let id = req.body.id;
@@ -141,7 +141,7 @@ app.post("/api/EjercicioAn4", jsonParser, (req, res, next) =>{
 		});
 })
 
-app.post("/api/EjercicioAn5", jsonParser, (req, res, next) =>{
+app.post("/api/usuarioAn5", jsonParser, (req, res, next) =>{
 	let dAcum = req.body.diasAcum; //Body en el apiutil de alexa
 	let id = req.body.id;
 	// let id = req.body.id;
@@ -163,7 +163,7 @@ app.post("/api/EjercicioAn5", jsonParser, (req, res, next) =>{
 		});
 })
 
-app.post("/api/EjercicioAn6", jsonParser, (req, res, next) =>{
+app.post("/api/usuarioAn6", jsonParser, (req, res, next) =>{
 	let exp = req.body.exp; //Body en el apiutil de alexa
 	let id = req.body.id;
 	// let id = req.body.id;
@@ -187,7 +187,7 @@ app.post("/api/EjercicioAn6", jsonParser, (req, res, next) =>{
 
 
 
-app.post( "/api/EjerecioAn", jsonParser, ( req, res, next ) => {
+app.post( "/api/usuarioAn", jsonParser, ( req, res, next ) => {
 	console.log(req.body);
 	let inicio = req.body.tiempoInicio; //Body en el apiutil de alexa
  	let id = req.body.id;
